@@ -275,3 +275,117 @@ body {
         flex-basis: 100%; /* Single column on mobile */
     }
 }
+/* Brain Seaction */
+:root {
+    --primary-blue: #3a5bf0; /* Main text color */
+    --accent-green: #38b2ac; /* Checkmark icon color */
+    --text-color: #4a5568;
+    --heading-color: #2d3748;
+    --background-light: #f7fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px; /* Ample padding top and bottom */
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Vertically aligns the graphic and text */
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left Side Styles */
+.illustration-container {
+    flex-basis: 50%; /* Takes up roughly half the space */
+    text-align: center;
+}
+
+.main-graphic {
+    max-width: 100%;
+    height: auto;
+    /* Placeholder for the complex SVG graphic */
+}
+
+/* Right Side Styles */
+.text-content {
+    flex-basis: 50%; /* Takes up roughly half the space */
+}
+
+.subtitle {
+    color: var(--primary-blue);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.structured-design {
+    color: var(--primary-blue);
+}
+
+.intro-text {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.feature-list {
+    list-style-type: none; /* Remove default bullets */
+}
+
+.feature-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.check-icon {
+    color: var(--accent-green);
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        text-align: center;
+    }
+    .text-content, .illustration-container {
+        flex-basis: 100%;
+    }
+    .feature-list {
+        text-align: left; /* Align list items left again */
+        padding-left: 20px;
+    }
+    .main-graphic {
+        max-width: 300px; /* Control size of graphic on mobile */
+        margin-bottom: 20px;
+    }
+}
+
