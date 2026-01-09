@@ -411,3 +411,85 @@ h1 {
     display: inline-flexbox;
     margin:0 auto;
 }
+/* Footer Seaction */
+.footer {
+  background: linear-gradient(180deg, #061a33, #041428);
+  color: #ffffff;
+  padding: 40px 80px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left side */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-icon {
+  font-size: 26px;
+}
+
+.logo-text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #4caf50;
+}
+
+.logo-subtext {
+  margin-left: 32px;
+  font-size: 13px;
+  color: #b0c4de;
+}
+
+/* Right side */
+.footer-right h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #061a33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.social-icons a:hover {
+  background: #4caf50;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Divider */
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 30px 0 15px;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #cbd5e1;
+}
