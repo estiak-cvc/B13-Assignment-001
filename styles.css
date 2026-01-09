@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Navbar Section */
+
+.navbar {
+    background-color: #fff; /* White background */
+    padding: 10px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Spaces items out along the main axis */
+    align-items: center; /* Centers items vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.nav-links {
+    list-style-type: none; /* Removes bullet points */
+    display: flex;
+    justify-content: center; /* Centers the links group */
+    flex-grow: 1; /* Allows links to take up available space */
+    margin: 0 20px; /* Adds some margin around links group */
+}
+
+.nav-links li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #4CAF50; /* Hover effect */
+}
+
+.early-access:hover {
+    background-color: #85f78b;
+}
+
+.early-access {
+    background-color: #45a049; /* Green background for the button */
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Banner Section */
+:root {
+    --primary-color: #38b2ac; /* A teal color similar to the image */
+    --text-color-light: #f7fafc;
+    --background-dark: #1a202c;
+    --button-bg: #48bb78; /* Green for primary button */
+    --button-secondary-bg: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-banner {
+    background-color: var(--background-dark);
+    background-image: url(./assets/hero-bg.png), linear-gradient(to right bottom, rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.9)), url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+.access-badge {
+    display: inline-block;
+    background-color: rgb(252, 249, 249);
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, opacity 0.3s;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.button.primary {
+    background-color: var(--button-bg);
+    color: var(--background-dark);
+}
+
+.button.primary:hover {
+    background-color: #38a169;
+}
+
+.button.secondary {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color-light);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button.secondary:hover {
+    opacity: 0.8;
+}
