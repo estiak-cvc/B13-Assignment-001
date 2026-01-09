@@ -165,3 +165,113 @@ p {
 .button.secondary:hover {
     opacity: 0.8;
 }
+:root {
+    --primary-red: #e53e3e; /* A vibrant red for icons */
+    --text-color: #4a5568;
+    --heading-color: #2d3748;
+    --background-white: #ffffff;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f7fafc; /* Light background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.section-header h2 {
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1rem;
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feature-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+.feature-card {
+    background-color: var(--background-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    flex: 1; /* Makes all cards equal width */
+    max-width: 280px;
+    transition: transform 0.3s;
+    margin-bottom: 50px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Simple hover effect */
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.icon {
+    color: var(--background-white);
+    font-size: 24px;
+}
+
+.feature-card h3 {
+    color: var(--heading-color);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Basic responsiveness for smaller screens */
+@media (max-width: 992px) {
+    .feature-cards-container {
+        flex-wrap: wrap;
+    }
+    .feature-card {
+        flex-basis: calc(50% - 20px); /* Two cards per row on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .feature-card {
+        flex-basis: 100%; /* Single column on mobile */
+    }
+}
